@@ -1,4 +1,9 @@
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; code revision 1
+;; 2023.11.12
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+    
     ; set the processor type target for the assembly file
     processor 6502
 
@@ -50,7 +55,7 @@ StartCartridge:
 
     ; store the value of the accumalator at memory address 
     ; $0 + the value of the x register
-    sta $0,x                
+    sta $0, x                
                                       
 ClearMemoryLoop:
                             
@@ -59,7 +64,7 @@ ClearMemoryLoop:
 
     ; store the value of the accumalator at memory address 
     ; $0 + the value of the x register
-    sta $0,x                
+    sta $0, x                
 
     ; if the x register is not equal to 0 (z-flag is not set)
     ; branch back to ClearMemoryLoop
